@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh0j43nr2a2nw"]
+
+[ext_resource type="Texture2D" uid="uid://cdi3f0i5py5gb" path="res://basic_dude.png" id="1_hrixl"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1x136"]
+radius = 7.0
+height = 16.0
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_1x136")
+metadata/_edit_lock_ = true
+
+[node name="BasicDude" type="Sprite2D" parent="."]
+texture = ExtResource("1_hrixl")
