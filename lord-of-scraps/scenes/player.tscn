@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dh0j43nr2a2nw"]
+[gd_scene load_steps=4 format=3 uid="uid://dh0j43nr2a2nw"]
 
+[ext_resource type="Script" uid="uid://3jvpyn7m57gh" path="res://scenes/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://cdi3f0i5py5gb" path="res://basic_dude.png" id="1_hrixl"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1x136"]
@@ -7,6 +8,7 @@ radius = 7.0
 height = 16.0
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_1x136")
