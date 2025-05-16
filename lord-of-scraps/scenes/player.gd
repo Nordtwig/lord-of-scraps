@@ -4,9 +4,6 @@ class_name Player
 @export var move_speed: float = 4.0
 
 
-func _ready() -> void:
-	print("Player ready")
-
 func _process(delta: float) -> void:
 	if Input.is_action_pressed("move_up"):
 		position.y -= move_speed
